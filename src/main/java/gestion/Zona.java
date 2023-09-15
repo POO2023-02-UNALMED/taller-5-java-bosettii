@@ -30,6 +30,8 @@ public class Zona {
 
     public void agregarAnimales(Animal a){
         animales.add(a);
+        a.setZona(this);
+
     }
 
     public int cantidadAnimales(){

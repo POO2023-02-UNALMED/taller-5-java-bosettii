@@ -9,8 +9,7 @@ public class Animal {
     private int edad;
     private String habitat;
     private String genero;
-    public Zona zona;
-
+    private Zona zona;
 
     public Animal() {
     }
@@ -54,20 +53,20 @@ public class Animal {
         this.genero = genero;
     }
 
+    public Zona getZona() {
+        return this.zona;
+    }
 
+    public void setZona(Zona zona) {
+        this.zona = zona;
+    }
 
-
-
-
-
-
-
-    
 
     public String movimiento(){
         return "desplazarse";
 
     }
+
     public void totalPorTipo(){   
         Mamifero a1 = new Mamifero();     
         Ave a2 = new Ave();
