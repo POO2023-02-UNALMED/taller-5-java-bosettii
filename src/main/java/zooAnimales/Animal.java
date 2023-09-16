@@ -85,10 +85,38 @@ public class Animal {
     }
 
     public String toString(){
-        if(this.zona != null)
-            return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en" + this.getHabitat() + ", y mi genero es " + this.getGenero() ;
+        if(this.zona == null)
+            return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + ", y mi genero es " + this.getGenero() ;
             
-        return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en" + this.getHabitat() + ", y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
+        return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + ", y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
     }
     
+
+/*    public static void main(String[] args){
+
+        new Anfibio();
+		new Anfibio();
+		new Mamifero();
+		new Mamifero();
+		new Mamifero();
+		new Reptil();
+		new Pez();
+		new Ave();
+		new Ave();
+        Ave an2 = new Ave("paloma", 5, "ciudad", "F", "gris");
+
+
+        String  comp = "Mamiferos: 4\n" + 
+				"Aves: 4\n" + 
+				"Reptiles: 2\n" + 
+				"Peces: 2\n" + 
+				"Anfibios: 3";
+
+        System.out.print(comp);
+        System.out.println("\n");
+        System.out.println(Animal.totalPorTipo());
+        System.out.println(an2.toString());
+
+
+    }*/
 }
