@@ -70,18 +70,16 @@ public class Animal {
     public static String totalPorTipo(){   
         Mamifero a1 = new Mamifero();     
         Ave a2 = new Ave();
+        Ave a6 = new Ave();
         Reptil a3 = new Reptil();
         Pez a4 = new Pez();
         Anfibio a5 = new Anfibio();
 
         return "Mamiferos: " + a1.cantidadMamiferos()+"\n"+
-        "Aves: " +(1+a2.cantidadAves())+"\n"+
+        "Aves: " +a2.cantidadAves()+"\n"+
         "Reptiles: " + a3.cantidadReptil()+"\n"+
         "Peces: " + a4.cantidadPeces()+"\n"+
         "Anfibios: " + a5.cantidadAnfibios();
-        
-
-
     }
 
     public String toString(){
@@ -103,7 +101,6 @@ public class Animal {
 		new Pez();
 		new Ave();
 		new Ave();
-    
         String  comp = "Mamiferos: 4\n" + 
 				"Aves: 4\n" + 
 				"Reptiles: 2\n" + 
@@ -111,9 +108,8 @@ public class Animal {
 				"Anfibios: 3";
 
         System.out.print(comp);
-        System.out.println("\n");
         System.out.println(Animal.totalPorTipo());
-
+        System.out.println(Animal.totalPorTipo().equals(comp));
 
     }
 }
