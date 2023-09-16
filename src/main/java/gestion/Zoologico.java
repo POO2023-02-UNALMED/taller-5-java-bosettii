@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class Zoologico {
     private String nombre;
     private String ubicacion;
-    public static ArrayList<Zona> zona;
+    private static ArrayList<Zona> zona;
+
     //private Zona[] zona;
 
     public Zoologico(){
@@ -23,6 +24,15 @@ public class Zoologico {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}    
+
+    public ArrayList<Zona> getZona() {
+        return zona;
+    }
+
+    public void setZona(ArrayList<Zona> zona) {
+        Zoologico.zona = zona;
+    };
+
 
     public void agregarZonas(Zona z){
         zona.add(z);

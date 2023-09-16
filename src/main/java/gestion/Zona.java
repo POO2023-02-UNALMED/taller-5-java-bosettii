@@ -6,7 +6,7 @@ import zooAnimales.Animal;
 
 public class Zona {
     private String nombre;
-    public Zoologico zoo;
+    private Zoologico zoo;
     public static ArrayList<Animal> animales;
     
     
@@ -25,6 +25,16 @@ public class Zona {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
+    public Zoologico getZoo() {
+        return this.zoo;
+    }
+
+    public void setZoo(Zoologico zoo) {
+        this.zoo = zoo;
+    };
+
+    
 
 
 

@@ -67,7 +67,7 @@ public class Animal {
 
     }
 
-    public void totalPorTipo(){   
+    public static void totalPorTipo(){   
         Mamifero a1 = new Mamifero();     
         Ave a2 = new Ave();
         Reptil a3 = new Reptil();
@@ -89,7 +89,7 @@ public class Animal {
         if(this.zona != null)
             return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en" + this.habitat + ", y mi genero es " + this.genero ;
             
-        return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en" + this.habitat + ", y mi genero es " + this.genero + ", la zona en la que me ubico es" + this.zona + ", en el zoo" + this.zona.zoo;
+        return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en" + this.habitat + ", y mi genero es " + this.genero + ", la zona en la que me ubico es" + this.zona + ", en el zoo" + this.zona.getZoo();
     }
     
 }

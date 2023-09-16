@@ -8,7 +8,7 @@ public class Pez extends Animal{
     public static int salmones = 0;
     public static int bacalaos = 0;
     private String colorEscamas;
-    private int catidadAletas;
+    private int cantidadAletas;
     private static int cantidad = 0;
 
 
@@ -17,10 +17,10 @@ public class Pez extends Animal{
     }
 
 
-    public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int catidadAletas) {
+    public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
         super(nombre, edad, habitat, genero);
         this.colorEscamas = colorEscamas;
-        this.catidadAletas = catidadAletas;
+        this.cantidadAletas = cantidadAletas;
         totalAnimales++;
         cantidad++;
     }
@@ -34,12 +34,12 @@ public class Pez extends Animal{
         this.colorEscamas = colorEscamas;
     }
 
-    public int getCatidadAletas() {
-        return this.catidadAletas;
+    public int getCantidadAletas() {
+        return this.cantidadAletas;
     }
 
-    public void setCatidadAletas(int catidadAletas) {
-        this.catidadAletas = catidadAletas;
+    public void setCantidadAletas(int cantidadAletas) {
+        this.cantidadAletas = cantidadAletas;
     }
 
 
