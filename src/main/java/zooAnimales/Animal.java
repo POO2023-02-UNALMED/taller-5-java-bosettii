@@ -75,7 +75,7 @@ public class Animal {
         Anfibio a5 = new Anfibio();
 
         return "Mamiferos: " + a1.cantidadMamiferos()+"\n"+
-        "Aves: " + a2.cantidadAves()+"\n"+
+        "Aves: " +(1+a2.cantidadAves())+"\n"+
         "Reptiles: " + a3.cantidadReptil()+"\n"+
         "Peces: " + a4.cantidadPeces()+"\n"+
         "Anfibios: " + a5.cantidadAnfibios();
@@ -92,7 +92,7 @@ public class Animal {
     }
     
 
-/*    public static void main(String[] args){
+    public static void main(String[] args){
 
         new Anfibio();
 		new Anfibio();
@@ -103,9 +103,7 @@ public class Animal {
 		new Pez();
 		new Ave();
 		new Ave();
-        Ave an2 = new Ave("paloma", 5, "ciudad", "F", "gris");
-
-
+    
         String  comp = "Mamiferos: 4\n" + 
 				"Aves: 4\n" + 
 				"Reptiles: 2\n" + 
@@ -115,8 +113,7 @@ public class Animal {
         System.out.print(comp);
         System.out.println("\n");
         System.out.println(Animal.totalPorTipo());
-        System.out.println(an2.toString());
 
 
-    }*/
+    }
 }
