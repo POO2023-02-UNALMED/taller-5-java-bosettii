@@ -67,7 +67,7 @@ public class Animal {
 
     }
 
-    public static void totalPorTipo(){   
+    public static int totalPorTipo(){   
         Mamifero a1 = new Mamifero();     
         Ave a2 = new Ave();
         Reptil a3 = new Reptil();
@@ -81,7 +81,7 @@ public class Animal {
         System.out.println("Anfibios : " + a5.cantidadAnfibios());
         
 
-
+        return a1.cantidadMamiferos()+a2.cantidadAves()+a3.cantidadReptil()+ a4.cantidadPeces()+ a5.cantidadAnfibios();
 
     }
 
