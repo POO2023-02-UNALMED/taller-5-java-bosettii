@@ -88,31 +88,5 @@ public class Animal {
             
         return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
     }
-    
-   
-    // public static void main(String[] args){
-		
-    //     new Anfibio();
-	// 	new Anfibio();
-	// 	new Mamifero();
-	// 	new Mamifero();
-	// 	new Mamifero();
-	// 	new Reptil();
-	// 	new Pez();
-	// 	new Ave();
-	// 	new Ave();
-    //     boolean ok = false;
-	// 	String  comp = "Mamiferos: 4\n" + 
-	// 			"Aves: 4\n" + 
-	// 			"Reptiles: 2\n" + 
-	// 			"Peces: 2\n" + 
-	// 			"Anfibios: 3";
-    //     if(Animal.totalPorTipo().equals(comp)) {
-    //             ok = true;
-    //         }
-    //     System.out.println(ok);
 
-
-    // }
-    
 }
