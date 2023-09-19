@@ -74,12 +74,18 @@ public class Animal {
         Reptil a3 = new Reptil();
         Pez a4 = new Pez();
         Anfibio a5 = new Anfibio();
+        int j = 4;
 
-        return "Mamiferos: " + a1.cantidadMamiferos()+"\n"+
+        return "Mamiferos: "+a1.cantidadMamiferos()+"\n" + 
+				"Aves: "+a2.cantidadAves()+"\n" + 
+				"Reptiles: "+a3.cantidadReptil()+"\n" + 
+				"Peces: "+a4.cantidadPeces()+"\n" + 
+				"Anfibios: "+a5.cantidadAnfibios();
+        /*return "Mamiferos: " + a1.cantidadMamiferos()+"\n"+
         "Aves: " +a2.cantidadAves()+"\n"+
         "Reptiles: " + a3.cantidadReptil()+"\n"+
         "Peces: " + a4.cantidadPeces()+"\n"+
-        "Anfibios: " + a5.cantidadAnfibios();
+        "Anfibios: " + a5.cantidadAnfibios();*/
     }
 
     public String toString(){
@@ -89,7 +95,7 @@ public class Animal {
         return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
     }
     
-
+/* 
     public static void main(String[] args){
 
         new Anfibio();
@@ -107,9 +113,11 @@ public class Animal {
 				"Peces: 2\n" + 
 				"Anfibios: 3";
 
-        System.out.print(comp);
-        System.out.println(Animal.totalPorTipo());
+        //System.out.print(comp);
+        //System.out.println(Animal.totalPorTipo());
         System.out.println(Animal.totalPorTipo().equals(comp));
+        //System.out.print(comp.equalsIgnoreCase(Animal.totalPorTipo()));
+        //System.out.print(Animal.totalPorTipo().getClass());
 
-    }
+    }*/
 }
