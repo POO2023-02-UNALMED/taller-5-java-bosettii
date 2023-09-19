@@ -13,6 +13,8 @@ public class Reptil extends Animal{
 
     public Reptil() {
         cantidad++;
+        if (listado == null)
+            listado = new ArrayList<Reptil>();
     }
 
 
@@ -22,6 +24,8 @@ public class Reptil extends Animal{
         this.largoCola = largoCola;
         totalAnimales++;
         cantidad++;
+        if (listado == null)
+            listado = new ArrayList<Reptil>();
     }
 
 

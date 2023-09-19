@@ -1,6 +1,7 @@
 package zooAnimales;
 
 import gestion.Zona;
+import gestion.Zoologico;
 
 public class Animal {
     public static int totalAnimales = 0;
@@ -95,29 +96,34 @@ public class Animal {
         return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
     }
     
- 
+ /* 
     public static void main(String[] args){
 
-        new Anfibio();
-		new Anfibio();
-		new Mamifero();
-		new Mamifero();
-		new Mamifero();
-		new Reptil();
-		new Pez();
-		new Ave();
-		new Ave();
-        String  comp = "Mamiferos: 4\n" + 
-				"Aves: 4\n" + 
-				"Reptiles: 2\n" + 
-				"Peces: 2\n" + 
-				"Anfibios: 3";
-
-        //System.out.print(comp);
-        //System.out.println(Animal.totalPorTipo());
-        System.out.println(Animal.totalPorTipo().equals(comp));
-        //System.out.print(comp.equalsIgnoreCase(Animal.totalPorTipo()));
-        //System.out.print(Animal.totalPorTipo().getClass());
+        Zoologico zoo = new Zoologico();
+            
+        Zona z1 = new Zona();
+        Zona z2 = new Zona();
+        zoo.agregarZonas(z1);
+        zoo.agregarZonas(z2);
+        z1.agregarAnimales(Mamifero.crearCaballo("test", 11, "M"));
+        z1.agregarAnimales(Mamifero.crearCaballo("test", 11, "M"));
+        z1.agregarAnimales(Mamifero.crearLeon("test", 11, "M"));
+        z1.agregarAnimales(Ave.crearHalcon("test", 11, "M"));
+        z1.agregarAnimales(Ave.crearHalcon("test", 11, "M"));
+        z1.agregarAnimales(Ave.crearAguila("test", 11, "M"));
+        z1.agregarAnimales(Ave.crearAguila("test", 11, "M"));
+        z1.agregarAnimales(Anfibio.crearRana("test", 11, "M"));
+        z2.agregarAnimales(Anfibio.crearSalamandra("test", 11, "M"));
+        z2.agregarAnimales(Reptil.crearIguana("test", 11, "M"));
+        z2.agregarAnimales(Reptil.crearSerpiente("test", 11, "M"));
+        z2.agregarAnimales(Pez.crearSalmon("test", 11, "M"));
+        z2.agregarAnimales(Pez.crearBacalao("test", 11, "M"));
+        Mamifero.crearCaballo("test", 11, "M");
+        Ave.crearHalcon("test", 11, "M");
+        Anfibio.crearRana("test", 11, "M");
+        Reptil.crearIguana("test", 11, "M");
+        Pez.crearBacalao("test", 11, "M");
 
     }
+    */
 }

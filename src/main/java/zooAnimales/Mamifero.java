@@ -12,6 +12,8 @@ public class Mamifero extends Animal {
 
     public Mamifero() {
         cantidad++;
+        if (listado == null)
+            listado = new ArrayList<Mamifero>();
     }
 
 
@@ -21,6 +23,8 @@ public class Mamifero extends Animal {
         this.patas = patas;
         totalAnimales++;
         cantidad++;
+        if (listado == null)
+            listado = new ArrayList<Mamifero>();
     }
 
     public boolean isPelaje() {

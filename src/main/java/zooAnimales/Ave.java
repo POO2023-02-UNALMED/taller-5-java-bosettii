@@ -12,6 +12,8 @@ public class Ave extends Animal{
 
     public Ave() {
         cantidad++;
+        if (listado == null)
+            listado = new ArrayList<Ave>();
     }
 
     public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
@@ -19,6 +21,8 @@ public class Ave extends Animal{
         this.colorPlumas = colorPlumas;
         totalAnimales++;
         cantidad++;
+        if (listado == null)
+            listado = new ArrayList<Ave>();
     }
 
     public String getColorPlumas() {

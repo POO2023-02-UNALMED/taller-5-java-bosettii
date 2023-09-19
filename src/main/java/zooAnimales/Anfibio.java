@@ -14,6 +14,8 @@ public class Anfibio extends Animal{
 
     public Anfibio() {
         cantidad++;
+        if (listado == null)
+            listado = new ArrayList<Anfibio>();
     }
 
     public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
@@ -22,6 +24,8 @@ public class Anfibio extends Animal{
         this.venenoso = venenoso;
         totalAnimales++;
         cantidad++;
+        if (listado == null)
+            listado = new ArrayList<Anfibio>();
     }
 
 

@@ -14,6 +14,8 @@ public class Pez extends Animal{
 
     public Pez() {
         cantidad++;
+        if (listado == null)
+            listado = new ArrayList<Pez>();
     }
 
 
@@ -23,6 +25,8 @@ public class Pez extends Animal{
         this.cantidadAletas = cantidadAletas;
         totalAnimales++;
         cantidad++;
+        if (listado == null)
+            listado = new ArrayList<Pez>();
     }
 
 
