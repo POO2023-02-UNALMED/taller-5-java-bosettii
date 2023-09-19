@@ -75,18 +75,19 @@ public class Animal {
         Reptil a3 = new Reptil();
         Pez a4 = new Pez();
         Anfibio a5 = new Anfibio();
-        int j = 4;
 
-        return "Mamiferos: 4\n" + 
-				"Aves: 4\n" + 
-				"Reptiles: 2\n" + 
-				"Peces: 2\n" + 
-				"Anfibios: 3";
-        /*return "Mamiferos: " + a1.cantidadMamiferos()+"\n"+
+        return a1.cantidadMamiferos()+ 
+				a2.cantidadAves() + 
+				a3.cantidadReptil()+ 
+				a4.cantidadPeces() + 
+				a5.cantidadAnfibios();
+        
+        /*return "Mamiferos: "+a1.cantidadMamiferos()+"\n"+
         "Aves: " +a2.cantidadAves()+"\n"+
         "Reptiles: " + a3.cantidadReptil()+"\n"+
         "Peces: " + a4.cantidadPeces()+"\n"+
-        "Anfibios: " + a5.cantidadAnfibios();*/
+        "Anfibios: " + a5.cantidadAnfibios();
+        */
     }
 
     public String toString(){
@@ -96,10 +97,26 @@ public class Animal {
         return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
     }
     
- /* 
+  
     public static void main(String[] args){
 
-        Zoologico zoo = new Zoologico();
+
+        /*new Anfibio();
+		new Anfibio();
+		new Mamifero();
+		new Mamifero();
+		new Mamifero();
+		new Reptil();
+		new Pez();
+		new Ave();
+		new Ave();
+        String  comp = "Mamiferos: 4\n" + 
+				"Aves: 4\n" + 
+				"Reptiles: 2\n" + 
+				"Peces: 2\n" + 
+				"Anfibios: 3";
+
+        /*Zoologico zoo = new Zoologico();
             
         Zona z1 = new Zona();
         Zona z2 = new Zona();
@@ -123,7 +140,17 @@ public class Animal {
         Anfibio.crearRana("test", 11, "M");
         Reptil.crearIguana("test", 11, "M");
         Pez.crearBacalao("test", 11, "M");
+*/
+        //System.out.println(Animal.totalPorTipo());
+        //System.out.println(comp);
+        //System.out.println(Animal.totalPorTipo().getClass());
+        //System.out.println(comp.getClass());
+        //System.out.println(Animal.totalPorTipo().equals(comp));
+        //System.out.println(Animal.totalPorTipo().compareTo(comp));
+        //System.out.println(zoo.cantidadTotalAnimales());
+        //System.out.println(zoo.getZona().get(0).cantidadAnimales());
+        //System.out.println(Mamifero.caballos + Mamifero.leones);
 
     }
-    */
+    
 }

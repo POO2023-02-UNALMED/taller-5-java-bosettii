@@ -33,8 +33,8 @@ public class Ave extends Animal{
         this.colorPlumas = colorPlumas;
     }
     
-    public int cantidadAves(){
-        return cantidad;
+    public String cantidadAves(){
+        return "Aves: " + cantidad + "\n";
     }
 
     @Override
