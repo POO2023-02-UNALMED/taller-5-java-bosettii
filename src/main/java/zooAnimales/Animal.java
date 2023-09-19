@@ -71,7 +71,7 @@ public class Animal {
     public static String totalPorTipo(){   
         Mamifero a1 = new Mamifero();     
         Ave a2 = new Ave();
-        Ave a6 = new Ave();
+        //Ave a6 = new Ave();
         Reptil a3 = new Reptil();
         Pez a4 = new Pez();
         Anfibio a5 = new Anfibio();
@@ -97,11 +97,10 @@ public class Animal {
         return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
     }
     
-  
+  /* 
     public static void main(String[] args){
-
-
-        /*new Anfibio();
+		
+        new Anfibio();
 		new Anfibio();
 		new Mamifero();
 		new Mamifero();
@@ -110,47 +109,16 @@ public class Animal {
 		new Pez();
 		new Ave();
 		new Ave();
-        String  comp = "Mamiferos: 4\n" + 
+        //System.out.println(Animal.totalPorTipo());
+		String  comp = "Mamiferos: 4\n" + 
 				"Aves: 4\n" + 
 				"Reptiles: 2\n" + 
 				"Peces: 2\n" + 
 				"Anfibios: 3";
-
-        /*Zoologico zoo = new Zoologico();
-            
-        Zona z1 = new Zona();
-        Zona z2 = new Zona();
-        zoo.agregarZonas(z1);
-        zoo.agregarZonas(z2);
-        z1.agregarAnimales(Mamifero.crearCaballo("test", 11, "M"));
-        z1.agregarAnimales(Mamifero.crearCaballo("test", 11, "M"));
-        z1.agregarAnimales(Mamifero.crearLeon("test", 11, "M"));
-        z1.agregarAnimales(Ave.crearHalcon("test", 11, "M"));
-        z1.agregarAnimales(Ave.crearHalcon("test", 11, "M"));
-        z1.agregarAnimales(Ave.crearAguila("test", 11, "M"));
-        z1.agregarAnimales(Ave.crearAguila("test", 11, "M"));
-        z1.agregarAnimales(Anfibio.crearRana("test", 11, "M"));
-        z2.agregarAnimales(Anfibio.crearSalamandra("test", 11, "M"));
-        z2.agregarAnimales(Reptil.crearIguana("test", 11, "M"));
-        z2.agregarAnimales(Reptil.crearSerpiente("test", 11, "M"));
-        z2.agregarAnimales(Pez.crearSalmon("test", 11, "M"));
-        z2.agregarAnimales(Pez.crearBacalao("test", 11, "M"));
-        Mamifero.crearCaballo("test", 11, "M");
-        Ave.crearHalcon("test", 11, "M");
-        Anfibio.crearRana("test", 11, "M");
-        Reptil.crearIguana("test", 11, "M");
-        Pez.crearBacalao("test", 11, "M");
-*/
-        //System.out.println(Animal.totalPorTipo());
-        //System.out.println(comp);
-        //System.out.println(Animal.totalPorTipo().getClass());
-        //System.out.println(comp.getClass());
-        //System.out.println(Animal.totalPorTipo().equals(comp));
-        //System.out.println(Animal.totalPorTipo().compareTo(comp));
-        //System.out.println(zoo.cantidadTotalAnimales());
-        //System.out.println(zoo.getZona().get(0).cantidadAnimales());
-        //System.out.println(Mamifero.caballos + Mamifero.leones);
+		if(Animal.totalPorTipo().equals(comp)) {
+			System.out.println(Animal.totalPorTipo());
+		}
 
     }
-    
+    */
 }
