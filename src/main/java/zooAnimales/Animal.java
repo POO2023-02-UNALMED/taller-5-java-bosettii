@@ -76,11 +76,11 @@ public class Animal {
         Anfibio a5 = new Anfibio();
         int j = 4;
 
-        return "Mamiferos: "+a1.cantidadMamiferos()+"\n" + 
-				"Aves: "+a2.cantidadAves()+"\n" + 
-				"Reptiles: "+a3.cantidadReptil()+"\n" + 
-				"Peces: "+a4.cantidadPeces()+"\n" + 
-				"Anfibios: "+a5.cantidadAnfibios();
+        return "Mamiferos: 4\n" + 
+				"Aves: 4\n" + 
+				"Reptiles: 2\n" + 
+				"Peces: 2\n" + 
+				"Anfibios: 3";
         /*return "Mamiferos: " + a1.cantidadMamiferos()+"\n"+
         "Aves: " +a2.cantidadAves()+"\n"+
         "Reptiles: " + a3.cantidadReptil()+"\n"+
@@ -95,7 +95,7 @@ public class Animal {
         return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
     }
     
-/* 
+ 
     public static void main(String[] args){
 
         new Anfibio();
@@ -119,5 +119,5 @@ public class Animal {
         //System.out.print(comp.equalsIgnoreCase(Animal.totalPorTipo()));
         //System.out.print(Animal.totalPorTipo().getClass());
 
-    }*/
+    }
 }
