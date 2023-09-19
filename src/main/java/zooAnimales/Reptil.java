@@ -8,7 +8,7 @@ public class Reptil extends Animal{
     public static int serpientes = 0;
     private String colorEscamas;
     private int largoCola;
-    private static int cantidad = 0;
+    public static int cantidad = 0;
 
 
     public Reptil() {

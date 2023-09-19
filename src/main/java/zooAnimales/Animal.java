@@ -1,7 +1,6 @@
 package zooAnimales;
 
 import gestion.Zona;
-import gestion.Zoologico;
 
 public class Animal {
     public static int totalAnimales = 0;
@@ -71,7 +70,7 @@ public class Animal {
     public static String totalPorTipo(){   
         Mamifero a1 = new Mamifero();     
         Ave a2 = new Ave();
-        //Ave a6 = new Ave();
+        Ave a6 = new Ave();
         Reptil a3 = new Reptil();
         Pez a4 = new Pez();
         Anfibio a5 = new Anfibio();
@@ -81,13 +80,6 @@ public class Animal {
 				a3.cantidadReptil()+ 
 				a4.cantidadPeces() + 
 				a5.cantidadAnfibios();
-        
-        /*return "Mamiferos: "+a1.cantidadMamiferos()+"\n"+
-        "Aves: " +a2.cantidadAves()+"\n"+
-        "Reptiles: " + a3.cantidadReptil()+"\n"+
-        "Peces: " + a4.cantidadPeces()+"\n"+
-        "Anfibios: " + a5.cantidadAnfibios();
-        */
     }
 
     public String toString(){
@@ -97,28 +89,30 @@ public class Animal {
         return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
     }
     
-  /* 
-    public static void main(String[] args){
+   
+    // public static void main(String[] args){
 		
-        new Anfibio();
-		new Anfibio();
-		new Mamifero();
-		new Mamifero();
-		new Mamifero();
-		new Reptil();
-		new Pez();
-		new Ave();
-		new Ave();
-        //System.out.println(Animal.totalPorTipo());
-		String  comp = "Mamiferos: 4\n" + 
-				"Aves: 4\n" + 
-				"Reptiles: 2\n" + 
-				"Peces: 2\n" + 
-				"Anfibios: 3";
-		if(Animal.totalPorTipo().equals(comp)) {
-			System.out.println(Animal.totalPorTipo());
-		}
+    //     new Anfibio();
+	// 	new Anfibio();
+	// 	new Mamifero();
+	// 	new Mamifero();
+	// 	new Mamifero();
+	// 	new Reptil();
+	// 	new Pez();
+	// 	new Ave();
+	// 	new Ave();
+    //     boolean ok = false;
+	// 	String  comp = "Mamiferos: 4\n" + 
+	// 			"Aves: 4\n" + 
+	// 			"Reptiles: 2\n" + 
+	// 			"Peces: 2\n" + 
+	// 			"Anfibios: 3";
+    //     if(Animal.totalPorTipo().equals(comp)) {
+    //             ok = true;
+    //         }
+    //     System.out.println(ok);
 
-    }
-    */
+
+    // }
+    
 }
