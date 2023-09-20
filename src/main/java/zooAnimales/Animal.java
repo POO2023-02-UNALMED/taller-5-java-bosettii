@@ -67,21 +67,12 @@ public class Animal {
 
     }
 
-    public static String totalPorTipo(){   
-        Mamifero a1 = new Mamifero();     
-        Ave a2 = new Ave();
-        Ave a6 = new Ave();
-        Reptil a3 = new Reptil();
-        Pez a4 = new Pez();
-        Anfibio a5 = new Anfibio();
 
-        return a1.cantidadMamiferos()+ 
-				a2.cantidadAves() + 
-				a3.cantidadReptil()+ 
-				a4.cantidadPeces() + 
-				a5.cantidadAnfibios();
+    public static String totalPorTipo(){
+        return ("Mamiferos: " + Mamifero.cantidadMamiferos()+"\nAves: "+ Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios());
     }
 
+    
     public String toString(){
         if(this.zona == null)
             return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() ;
